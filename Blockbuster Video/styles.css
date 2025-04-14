@@ -1,0 +1,69 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter:grayscale(30%) contrast(200%);
+}
+
+.fa-expand {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: #B197FC;
+}
+
+.fa-expand:hover {
+    cursor: pointer;
+}
+
+section{
+    position:absolute;
+}
+
+#line1{
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    color:white;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#displayText{
+    align-items: center;
+    font-size: 30px;
+    color:white;
+    font-family: "Ubuntu", sans-serif;
+    bottom: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+#img1{
+    bottom:10%;
+    left:10%;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.showing{
+    opacity:1;
+}
+
+.fa-expand {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: #F7DDD8;
+}
+
+.fa-expand:hover {
+    cursor: pointer;
+}
