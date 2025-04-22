@@ -1,0 +1,37 @@
+{
+    "point1": {
+        "time": "03/13",
+        "amount": "530ml",
+        "reminder": "Please drink more water"
+    },
+    "point2": {
+        "time": "03/14",
+        "amount": "780ml",
+        "reminder": "Great effort!"
+    },
+    "point3": {
+        "time": "03/15",
+        "amount": "2300ml",
+        "reminder": "You met your daily goal!"
+    },
+    "point4": {
+        "time": "03/16",
+        "amount": "1800ml",
+        "reminder": "Good job!"
+    },
+    "point5": {
+        "time": "03/17",
+        "amount": "1500ml",
+        "reminder": "Keep it up!"
+    },
+    "point6": {
+        "time": "03/18",
+        "amount": "1200ml",
+        "reminder": "Almost there!"
+    },
+    "point7": {
+        "time": "03/19",
+        "amount": "890ml",
+        "reminder": "You can do better!"
+    }
+}
