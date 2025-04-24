@@ -1,0 +1,14 @@
+body{
+    background-color:rgb(250, 209, 148);
+}
+
+a{
+    cursor:pointer;
+    padding:10px;
+    border-radius: 10px;
+    font-size:1em;
+    text-align: center;
+    justify-content: center;
+    color:rgb(140,72,72);
+    text-decoration: none;
+}
