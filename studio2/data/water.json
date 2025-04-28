@@ -2,7 +2,7 @@
     "point1": {
         "time": "03/13",
         "amount": "530ml",
-        "reminder": "Please drink more water"
+        "reminder": "Please drink more water!"
     },
     "point2": {
         "time": "03/14",
@@ -33,5 +33,20 @@
         "time": "03/19",
         "amount": "890ml",
         "reminder": "You can do better!"
+    },
+    "point8": {
+        "time": "03/20",
+        "amount": "2000ml",
+        "reminder": "You met your daily goal!"
+    },
+    "point9": {
+        "time": "03/21",
+        "amount": "1600ml",
+        "reminder": "Good job!"
+    },
+    "point10": {
+        "time": "03/22",
+        "amount": "1400ml",
+        "reminder": "Keep it up!"
     }
 }
