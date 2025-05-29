@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version 1</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <!-- For Typewriter Effect -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- For Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="scene1">
+        <div id="app"></div>
+        <div id="terminal"></div>
+        <button id="btn_1" onclick="goToNext()">Start</button>
+    </div>
+
+    <div id="transition-screen">
+        <p id="transition-text"></p>
+        <button id="continue-btn" style="display:none;">Continue</button>
+    </div>
+
+    <div id="scene2">
+        <div id="text">
+            <p>Memory core connected.</p>
+            <p>Six fragmented memories detected.</p>
+            <p>These fragments are unstable yet vital to your identity.</p>
+            <p>Please repair or discard each one.</p>
+            <p>Every choice will shape who you become.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

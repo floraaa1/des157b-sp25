@@ -1,0 +1,90 @@
+#app {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family: "IBM Plex Mono", monospace;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+}
+
+#terminal {
+    text-align: center;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    min-height: 10px;
+}
+
+#btn_1 {
+    font-family: "IBM Plex Mono", monospace;
+    padding: 8px 20px;
+    font-size: 1.1em;
+    color: #daffdd;
+    background-color: #0f4129;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#btn_1:hover {
+    background-color: #3fc287;
+    cursor: pointer;
+}
+
+#btn_1.visible {
+    opacity: 1;
+}
+
+.blink {
+    display: inline-block;
+    width: 10px;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#transition-screen,
+#scene2 {
+    display: none;
+}
+
+#scene2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#scene1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
