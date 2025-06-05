@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usability Testing</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <!-- For Typewriter Effect -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- For Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="scene1">
+        <div id="app"></div>
+        <div id="terminal"></div>
+        <button id="btn_1" onclick="goToNext()">Start</button>
+    </div>
+
+    <div id="scene2">
+        <div id="text">
+            <p>Memory core connected.</p>
+            <p>Five fragmented memories detected.</p>
+            <p>These fragments are unstable yet vital to your identity.</p>
+            <p>Please repair or discard each one.</p>
+            <p>Every choice will shape who you become.</p>
+        </div>
+
+        <div id="system-status">
+            <p id="boot-text">System loading... Repair module initializing...</p>
+        </div>
+
+        <main class="memory-grid">
+            <div class="memory-card" data-id="fear" data-repaired="false">
+                <div class="memory-thumbnail">
+                    <p>Emotion Module</p>
+                </div>
+            </div>
+
+            <div class="memory-card" data-id="scientist" data-repaired="false">
+                <div class="memory-thumbnail">
+                    <p>Scientist's Audio</p>
+                </div>
+            </div>
+
+            <div class="memory-card" data-id="childhood" data-repaired="false">
+                <div class="memory-thumbnail">
+                    <p>Childhood Scene</p>
+                </div>
+            </div>
+
+            <div class="memory-card" data-id="future-letter" data-repaired="false">
+                <div class="memory-thumbnail">
+                    <p>Letter from Future Humans</p>
+                </div>
+            </div>
+
+            <div id="future-letter-template" class="hidden">
+                <p>Letter preview:</p>
+                <img src="images/letter.jpg" width="105%" height="105%" />
+            </div>
+
+            <div class="memory-card" data-id="love-memory" data-repaired="false">
+                <div class="memory-thumbnail">
+                    <p>AI-Human Love Memory</p>
+                </div>
+            </div>
+
+            <div id="choice-view" class="hidden">
+                <p>Choose memory for ending:</p>
+                <button class="ending-button happy" onclick="showEnding('happy')">Happy Ending</button>
+                <button class="ending-button sad" onclick="showEnding('sad')">Sad Ending</button>
+                <div id="ending"></div>
+            </div>
+
+            <div id="ending-view" class="hidden">
+                <button id="back-button" style="margin-bottom: 12px;">← Back</button>
+                <div id="ending-lines" style="margin-bottom: 12px;"></div>
+                <div id="line-detail"></div>
+            </div>
+
+            <div class="memory-card" data-id="system-report" data-repaired="false">
+                <div class="memory-thumbnail">
+                    <p>System Report Log</p>
+                </div>
+            </div>
+        </main>
+
+        <div id="modal" class="hidden">
+            <div class="modal-content">
+                <button id="close-modal">✖</button>
+                <div id="modal-body">
+                    <p id="modal-text">You have selected a memory fragment. Click "Repair" to begin the process.</p>
+                </div>
+                <button id="repair-btn">Repair</button>
+                <button id="discard-btn">Discard</button>
+            </div>
+        </div>
+
+        <button id="next" class="next-button">Next</button>
+    </div>
+
+    <div id="scene3">
+        <div id="question-container">
+            <p id="question-text"></p>
+            <button id="option1" class="option-btn"></button>
+            <button id="option2" class="option-btn"></button>
+        </div>
+        <canvas id="soul-chart"></canvas>
+    </div>
+
+    <div id="ending-scene">
+        <div id="ending-text" class="ending-text"></div>
+        <button id="restart-btn">Restart Journey</button>
+    </div>
+
+</body>
+
+</html>
