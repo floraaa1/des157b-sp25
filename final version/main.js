@@ -16,6 +16,7 @@ let personalityScores = {};
 let memoryScore = 0;
 let inMemoryDecision = false;
 let currentMemory = "";
+let inEasterEgg = false;
 
 
 setTimeout(() => {
@@ -44,6 +45,13 @@ function enterKey(e) {
         git = commands.length - 1;
 
         addLine(`visitor@debugger.com:~$ ${rawInput}`, "no-animation", 0);
+
+        if (inEasterEgg) {
+            handleEasterEgg(rawInput);
+            command.innerText = "";
+            textarea.value = "";
+            return;
+        }
 
         commander(rawInput.toLowerCase());
 
@@ -225,13 +233,10 @@ function displayPersonalityResults() {
 }
 
 function displayFinalProfile() {
-
     const personalityTotal = Object.values(personalityScores)
         .reduce((a, b) => a + b, 0);
 
-
     const totalScore = memoryScore + personalityTotal;
-
 
     let endingText, imgSrc;
     if (totalScore >= 5) {
@@ -252,4 +257,30 @@ function displayFinalProfile() {
         `<span class="color2">${endingText}</span>`
     ];
     loopLines(lines, "color2 margin", 80);
+    // Ask the Easter egg question after the ending
+    setTimeout(askEasterEgg, lines.length * 80 + 500);
 }
+
+// New Easter egg functions
+function askEasterEgg() {
+    inEasterEgg = true;
+    loopLines([
+        "<br>",
+        "Easter Egg: What is the name of the scientist who created you? (please type his name)"
+    ], "index margin", 80);
+}
+
+function handleEasterEgg(input) {
+    const ans = input.trim().toLowerCase();
+    if (ans === "roy") {
+        addLine("✔ Correct! Congratulations!", "color2 margin", 0);
+        const confettiAudio = new Audio("audio/confetti.mp3");
+        confettiAudio.play().catch(console.error);
+    } else {
+        addLine("Too bad, the correct answer is Roy!", "color2 margin", 0);
+        const loseAudio = new Audio("audio/lose.mp3");
+        loseAudio.play().catch(console.error);
+    }
+    inEasterEgg = false;
+}
+
