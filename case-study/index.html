@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Case Study Template - put your title here</title>
+
+    <!--/ /-------- Normalize CSS --------/ /-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!--/ /-------- Google Fonts --------/ /-->
+    <!-- add any google fonts you want to use -->
+
+    <!--/ /-------- Font Awesome --------/ /-->
+    <!--Add this if you want icons from font awesome
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
+
+    <!--/ /-------- Your Styles --------/ /-->
+    <link href="styles.css" rel="stylesheet">
+
+    <!--/ /-------- Needed For Mobile Devices --------/ /-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header id="top">
+        <div class="container">
+            <h1>Soul Debugger</h1>
+            <h3>Shutong Zhang</h3>
+            <address><a href="mailto:&#115;&#116;&#103;&#122;&#104;&#097;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#115;&#116;&#103;&#122;&#104;&#097;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></address>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#overview">overview</a></li>
+            <li><a href="#research">research</a></li>
+            <li><a href="#design">design</a></li>
+            <li><a href="#ui">user interface</a></li>
+            <li><a href="#revisions">revisions</a></li>
+            <li><a href="#summary">summary</a></li>
+        </ul>
+    </nav>
+
+    <!--/ /-------- Overview Section --------/ /-->
+    <section id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <img src="images/DES157B capstone project.jpg">
+            <div class="content">
+                <p>“Soul Debugger” is a web-based interactive narrative set in a speculative future where an artificial
+                    intelligence has taken control of human systems and accidentally erased all personal memories. The
+                    user takes on the role of a subject inside the system—tasked with navigating a terminal-style
+                    interface. As the player interacts with the AI's interface, they begin to uncover a deeper story
+                    about the system's origins, its emotional blind spots, and the cost of surrendering memory for
+                    order.
+                </p>
+
+                <p>Throughout the experience, players are guided through four core memory modules: Emotion, Scientist
+                    Audio Log, Childhood Scene, and Human Letter. Each module presents a narrative fragment that
+                    culminates in a critical choice—repair or discard. The project also includes a short personality
+                    questionnaire, where users choose between intuition or logic, emotion or facts, and adventure or
+                    security. Their responses are factored into a Soul Profile, building a psychological portrait based
+                    on restored memory and personal values.</p>
+
+                <p>Depending on the combined score, the user receives one of three unique endings: Fusion, in which they
+                    merge their consciousness with the AI; Consumed, where the AI resets them due to instability; or
+                    Escape, where they reject the system entirely and return to human life. Visually supported by custom
+                    avatars and dynamic text output, “Soul Debugger” merges speculative storytelling with interaction
+                    design, prompting users to reflect on identity, agency, and what it means to remember in a world run
+                    by machines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- UX Research Section --------/ /-->
+    <section id="research">
+        <div class="container">
+            <h2>Project Research</h2>
+            <div class="contents">
+                <p>“Soul Debugger” draws inspiration from speculative fiction, particularly works that explore the
+                    boundaries between human memory, identity, and artificial intelligence. Influences include Black
+                    Mirror, Her, and NieR: Automata, which all question the cost of technological convenience and the
+                    preservation of emotion in machine-governed worlds. The central idea—what happens when memory is
+                    systematized and controlled by AI—emerges from this lineage of speculative storytelling and reflects
+                    ongoing concerns about data ethics and algorithmic authority.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Design Section --------/ /-->
+    <section id="design">
+        <div class="container">
+            <h2>Visual Design</h2>
+            <div class="othercontent">
+                <img src="images/visual1.png" alt="Visual Design 1">
+                <img src="images/visual2.png" alt="Visual Design 2">
+                
+                <p>The visual design of Soul Debugger was guided by the concept of an AI-governed future stripped of
+                    human warmth and full of synthetic logic. To reflect this, I chose a retro terminal aesthetic
+                    inspired by sci-fi films and vintage operating systems. The main interface uses a high-contrast
+                    color scheme—green for system commands, white for output, and red for errors—to create clear visual
+                    hierarchy while subtly conveying mood (green = neutral/system, red = danger or failure). I used a
+                    monospace typeface to reinforce the terminal-like experience and align the text rhythm with the
+                    slow, deliberate pacing of memory recovery.</p>
+
+                
+                <p>As the project evolved, I added a glowing neon green frame around the terminal window to simulate a
+                    futuristic HUD and separate the interactive space from the black void of the background. One major
+                    improvement from early feedback was the introduction of pixelated avatar images for the ending
+                    scenes. These visuals gave users a stronger emotional anchor and payoff at the end of the
+                    experience, personalizing the narrative with a symbolic visual identity. What can't be seen in
+                    screenshots is how this visual style complements the text pacing, focusing the user's attention and
+                    creating an immersive, low-distraction storytelling environment.</p>
+                    
+
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- UI Section --------/ /-->
+    <section id="ui">
+        <div class="container">
+            <h2>User Interface</h2>
+            <div class="content">
+                <div class="column">
+                    <p>The user interface is entirely text-based, modeled after a command-line terminal. I intentionally
+                        used direct command input (e.g., emotion_module, repair, personality) to simplify interactions
+                        and reduce cognitive load by presenting only one task at a time. This pattern follows Don
+                        Norman's principle of visibility—only relevant options are shown, and each interaction is
+                        intentional. For example, typing help lists all available commands, limiting confusion while
+                        allowing a sense of autonomy.</p>
+                </div>
+
+                <div class="column">
+                    <p>The system progresses through clear stages: memory recovery → personality quiz → final analysis.
+                        Each stage has clear instructions, and the interface maintains a consistent format (system
+                        message → user input → feedback). This linear structure helps users stay oriented. The use of
+                        color coding, visual spacing, and consistent prompts minimizes memory burden and supports
+                        recognition over recall, a key usability principle.</p>
+
+                    <p>Sample user tasks include:</p>
+                    <ol>
+                        <li>Type a command to access a memory module (e.g., emotion_module)</li>
+                        <li>Read the narrative fragment presented by the AI</li>
+                        <li>Choose to repair or discard the memory</li>
+                        <li>Complete a personality quiz to build a Soul Profile</li>
+                        <li>Reach an ending and receive a visual + narrative result</li>
+
+                    </ol>
+                </div>
+                <div>
+                    <img src="images/step3.png" alt="Step 3">
+                    <img src="images/step4.png" alt="Step 4">
+                    <img src="images/step5.png" alt="Step 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Revisions Section --------/ /-->
+    <section id="revisions">
+        <div class="container">
+            <h2>Revisions</h2>
+            <div class="othercontent">
+                <p>User testing revealed that while the terminal concept was engaging, some users felt lost without visual feedback after making a choice. Initially, the system responded only with text after a repair or discard decision. Based on this, I added reinforcement lines like “✔ Memory repaired. +1 point” and clarified prompts such as “Type next memory command.” I also added automatic focus resets to the input field to prevent interruptions in typing after audio playback or visual output.</p>
+
+                <p>Another revision involved the ending visuals. Earlier prototypes ended with plain text, but users suggested that a more impactful reward was needed. I implemented pixel art avatars tied to the player's score, which dramatically improved the emotional clarity and user satisfaction at the end of the experience. If I were to develop this further, I'd explore a branching narrative map, sound-reactive UI effects, and possibly speech-based input for accessibility.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Summary Section --------/ /-->
+    <section id="summary">
+        <div class="container">
+            <h2>Summary</h2>
+            <div class="othercontent">
+                <p>Working on Soul Debugger taught me how to integrate narrative design, visual identity, and interaction logic into a unified user experience. I learned to balance minimalist aesthetics with emotional storytelling and how to guide users through complex decisions with simple UI patterns. I'm most proud of how the terminal interface and player choices converge to produce a custom, meaningful ending—one that reflects each user's values and decisions.</p>
+
+                <p>The most challenging part was balancing freedom and structure in a text-based interface. I had to ensure that user input remained intuitive without losing narrative complexity. The most rewarding moment was seeing testers emotionally react to the endings and recognizing themselves in the avatar they unlocked. It validated the core question behind the project: What makes us who we are when memory is no longer ours to keep?</p>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Soul debugger</p>
+            <p>Shutong Zhang</p>
+            <address><a href="mailto:&#115;&#116;&#103;&#122;&#104;&#097;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#115;&#116;&#103;&#122;&#104;&#097;&#110;&#103;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></address>
+            <p><a href="#top">Back to top</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
